@@ -1,11 +1,9 @@
 
-import  ReactDOM  from "react-dom";
+  import  ReactDOM  from "react-dom";
 
-// import App2 from "./App2"
-import "./index.css"
-import App from "./App"
-
-
+  import "./index.css"
+  import App from "./App"
+ 
 
 ReactDOM.render( 
  <App/>
