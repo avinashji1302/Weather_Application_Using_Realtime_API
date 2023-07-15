@@ -13,23 +13,23 @@ import DisplayWeather from './DisplayWeather';
     country:"",
    });
 
-   const[weather,setWeather]=useState("");
+   const[weather,setWeather]=useState({});
 
 
    async  function weatherData(e){
       
     e.preventDefault();
 
-    if(form.city===""){
-        alert("write the city name")
+    if(form.city === "" && form.country === ""){
+        alert("Write the city name & country name first")
     }else{
         const data =  await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${form.city},${form.country}&appid=${API_KEY}`).then((res)=>(res.json()).then((data)=>((data))))
-
         
-
+      if(data !== null && data !== undefined) {
         setWeather({
          data:data 
         });
+      }
    
     }
 
@@ -67,7 +67,7 @@ import DisplayWeather from './DisplayWeather';
       </form>
 
     {
-      weather.data!==undefined ?
+      weather.data !== undefined ?
       <div>
          <DisplayWeather data={weather.data}  />
       </div>
