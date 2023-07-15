@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Weather Applicarion - Using real time Api
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+introduction of project......
 
-In the project directory, you can run:
+## About this Project
+Task Manager is one of the early projects I created to practice using React with Firebase. It's a simple responsive ToDo application where you can add and delete tasks. You can also mark tasks as completed.
 
-### `npm start`
+Kindly note that every task you add is public and can be viewed by other visitors on the site. Please do not add sensitive or confidential information as tasks.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I hope you find this project useful for learning React and Firebase. Feel free to fork, clone, and modify the code to fit your needs. If you have any feedback or suggestions, please let me know by creating an issue or sending me a message.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run the Weather Application project locally, follow these steps:
 
-### `npm run build`
+1. Clone the repository to your local machine:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone https://github.com/your-username/Wather_Application_Using_Realtime_API.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate to the project directory:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+cd Wather_Application_Using_Realtime_API
+```
 
-### `npm run eject`
+3. Install the dependencies using npm:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To start the development server and view Wather_Application website, run the following command:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+This will launch the application on a local development server, typically at [http://localhost:3000](http://localhost:3000).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Wather_Application project utilizes the following technologies and libraries:
 
-### Code Splitting
+- React.js: A JavaScript library for building user interfaces.
+- React Router: A routing library for declarative navigation and routing in React applications.
+- Bootstrap: A popular CSS framework for building responsive and mobile-first websites.
+- Bootstrap Icons: A library of free, open-source icons for Bootstrap.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributers
 
-### Analyzing the Bundle Size
+<table>
+<tr>
+   
+     <td>
+        <a href="https://github.com/avinashji1302">
+            <img src="https://avatars.githubusercontent.com/u/114601400?v=4" width="100px" alt="Siddhant"/>
+                <br />
+            <b>Avinash Gupta</b>
+        </a>
+    </td>
+    </tr>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+</table>
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributions to Humari Dukaan are welcome! If you would like to contribute to the project, please follow these steps:
 
-### Deployment
+1. Fork the repository on GitHub.
+2. Create a new branch with a descriptive name.
+3. Make your changes and commit them to your branch.
+4. Push your changes to your forked repository.
+5. Submit a pull request explaining your changes and their purpose.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The Humari Dukaan project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
