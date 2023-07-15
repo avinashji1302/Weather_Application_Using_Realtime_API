@@ -58,7 +58,7 @@ Wather_Application project utilizes the following technologies and libraries:
 <tr>
    <td>
         <a href="https://github.com/avinashji1302">
-            <img src="https://avatars.githubusercontent.com/u/114601400?v=4" width="100px" alt="Siddhant"/>
+            <img src="https://avatars.githubusercontent.com/u/91355822?v=4" width="100px" alt="Siddhant"/>
                 <br />
             <b>Avinash Gupta</b>
         </a>
