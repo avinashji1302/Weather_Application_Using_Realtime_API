@@ -1,4 +1,4 @@
-# Weather Applicarion - Using real time Api
+# Weather Application - Using real time Api
 
 
 introduction of project......
