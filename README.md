@@ -62,15 +62,15 @@ Wather_Application project utilizes the following technologies and libraries:
                 <br />
             <b>Avinash Gupta</b>
         </a>
+    </td>
 
-         <a href="https://github.com/anmol111pal">
+   <td>
+       <a href="https://github.com/anmol111pal">
             <img src="https://avatars.githubusercontent.com/u/93645325?v=4" width="100px" alt="Anmol"/>
                 <br />
             <b>Anmol Pal</b>
         </a>
-
-      
-    </td>
+   </td>
  </tr>
 </table>
 
