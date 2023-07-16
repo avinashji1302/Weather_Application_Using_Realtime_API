@@ -1,7 +1,7 @@
 # Weather Application - Using real time Api
 
 
-introduction of project......
+Introduction of project......
 
 ## About this Project
 Task Manager is one of the early projects I created to practice using React with Firebase. It's a simple responsive ToDo application where you can add and delete tasks. You can also mark tasks as completed.
@@ -35,7 +35,7 @@ npm install
 
 ## Usage
 
-To start the development server and view Wather_Application website, run the following command:
+To start the development server and view Weather_Application website, run the following command:
 
 ```bash
 npm start
@@ -45,7 +45,7 @@ This will launch the application on a local development server, typically at [ht
 
 ## Technologies Used
 
-Wather_Application project utilizes the following technologies and libraries:
+Weather_Application project utilizes the following technologies and libraries:
 
 - React.js: A JavaScript library for building user interfaces.
 - React Router: A routing library for declarative navigation and routing in React applications.
