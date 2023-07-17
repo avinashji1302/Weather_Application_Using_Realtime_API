@@ -65,7 +65,7 @@ function Weather() {
           onChange={() => {
             setCelsius(!isCelsius);
           }}
-          value={isCelsius}
+          checked={isCelsius}
         />
         <input
           type="text"
