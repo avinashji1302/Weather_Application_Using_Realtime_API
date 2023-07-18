@@ -88,4 +88,4 @@ Contributions to Humari Dukaan are welcome! If you would like to contribute to t
 
 ## License
 
-The Humari Dukaan project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
+Weather Application - Using real time Api Project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
