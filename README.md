@@ -78,7 +78,7 @@ Weather_Application project utilizes the following technologies and libraries:
 
 ## Contributing
 
-Contributions to Humari Dukaan are welcome! If you would like to contribute to the project, please follow these steps:
+Contributions to Weather Application ! If you would like to contribute to the project, please follow these steps:
 
 1. Fork the repository on GitHub.
 2. Create a new branch with a descriptive name.
