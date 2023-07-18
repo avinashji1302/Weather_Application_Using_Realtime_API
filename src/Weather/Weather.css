@@ -1,10 +1,9 @@
 .weather {
 
-   background-color: grey;
+  background: linear-gradient(120deg, #c2c0c0, #8c8c8c);
 
 
     margin-top: 20px;
-    border: 3px dashed grey;
     border-radius: 20px;
     padding-bottom: 30px;
     width: max-content;
