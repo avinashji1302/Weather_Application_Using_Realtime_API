@@ -71,6 +71,13 @@ Weather_Application project utilizes the following technologies and libraries:
             <b>Anmol Pal</b>
         </a>
    </td>
+    <td>
+       <a href="https://github.com/rahulkumar161098">
+            <img src="https://avatars.githubusercontent.com/u/71649748?v=4" width="100px" alt="Anmol"/>
+                <br />
+            <b>Rahul Kumar</b>
+        </a>
+   </td>
  </tr>
 </table>
 
