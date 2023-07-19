@@ -62,6 +62,7 @@ function Weather() {
           type="checkbox"
           name="isCelsius"
           id="isCelsiusBox"
+          className="checkboxStyle"
           onChange={() => {
             setCelsius(!isCelsius);
           }}
