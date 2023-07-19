@@ -50,5 +50,13 @@
     background: transparent;
     color: black;
   }
+
+  .checkboxStyle{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 9px;
+  
+  }
   
   
