@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Weather.css";
 import DisplayWeather from "./DisplayWeather";
 
@@ -14,6 +14,31 @@ function Weather() {
   const [weather, setWeather] = useState({});
 
   const [isCelsius, setCelsius] = useState(true);
+
+  useEffect(() => {
+    getCityName()
+  },[])
+
+  function getCityName() {
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(async function(position) {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+
+        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`;
+
+    
+        const data = await fetch(apiUrl).then((res) => res.json().then((data) => data));
+       
+        setWeather({
+          data: data,
+        });
+  
+      });
+    } else {
+      document.getElementById('result').textContent = "Geolocation is not supported by this browser.";
+    }
+  }
 
   async function weatherData(e) {
     e.preventDefault();
