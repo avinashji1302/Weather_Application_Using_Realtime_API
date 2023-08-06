@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import "./Weather.css"
 import DisplayWeather from './DisplayWeather';
 
@@ -14,11 +14,27 @@ import DisplayWeather from './DisplayWeather';
    });
 
    const[weather,setWeather]=useState({});
+    function getCityName() {
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(async function(position) {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
 
+        // Replace 'YOUR_API_KEY' with your actual OpenWeatherMap API key
+        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`;
 
-   async  function weatherData(e){
-      
-    e.preventDefault();
+        
+        const data = await fetch(apiUrl).then((res)=>(res.json()).then((data)=>((data))))
+        setWeather({
+          data:data 
+         });
+      });
+    } else {
+      document.getElementById('result').textContent = "Geolocation is not supported by this browser.";
+    }
+  }
+
+   async function weatherData(){
 
     if(form.city === "" && form.country === ""){
         alert("Write the city name & country name first")
@@ -34,9 +50,12 @@ import DisplayWeather from './DisplayWeather';
     }
 
     setForm({city:"",country:""})
-    
-
+  
 }
+    useEffect(() => {
+      getCityName()
+    }, [])
+
    const handleChange=(e)=>{
     let name=e.target.name;
     let value=e.target.value;
@@ -63,7 +82,9 @@ import DisplayWeather from './DisplayWeather';
 
       <input  type="text" name="city" placeholder="City" onChange={handleChange} value={form.city} />
       <input  type="text" name="country" placeholder="Country" onChange={handleChange} value={form.country} />
-      <button className='getweather' onClick={(e)=>weatherData(e)}>Submit</button>
+      <button className='getweather' onClick={(e)=>{
+        e.preventDefault()
+        weatherData()}}>Submit</button>
       </form>
 
     {
