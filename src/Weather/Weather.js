@@ -14,16 +14,14 @@ import DisplayWeather from './DisplayWeather';
    });
 
    const[weather,setWeather]=useState({});
-    function getCityName() {
+    function getweatherByLocation() {
     if ("geolocation" in navigator) {
       navigator.geolocation.getCurrentPosition(async function(position) {
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
 
         // Replace 'YOUR_API_KEY' with your actual OpenWeatherMap API key
-        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`;
-
-        
+        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`;        
         const data = await fetch(apiUrl).then((res)=>(res.json()).then((data)=>((data))))
         setWeather({
           data:data 
@@ -53,7 +51,7 @@ import DisplayWeather from './DisplayWeather';
   
 }
     useEffect(() => {
-      getCityName()
+      getweatherByLocation()
     }, [])
 
    const handleChange=(e)=>{
