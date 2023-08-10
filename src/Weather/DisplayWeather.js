@@ -19,7 +19,9 @@ function DisplayWeather(props) {
             {data.name}, {data.sys.country} , Weather
           </span>
 
+          <div className="weather_time">
           <span>As of {new Date().toLocaleTimeString()}</span>
+          </div>
 
           <h1>
             {isCelsius
