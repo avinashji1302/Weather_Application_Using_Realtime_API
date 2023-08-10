@@ -31,6 +31,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    margin-right: 35px;
     gap: 12px;
   }
 
@@ -88,6 +89,9 @@
   .weather .title{
     font-size: 3rem;
   }
+  .weather_submit{
+    margin-right: 13px;
+  }
 }
 
 @media(max-width: 500px){
@@ -100,6 +104,9 @@
   .weather .title{
     font-size: 2.5rem;
   }
+  .weather_submit{
+    margin-right: 25px;
+  }
 }
 
 @media(max-width: 375px){
@@ -110,7 +117,6 @@
     width: 15px;
   }
   .weather form input{
-   
     font-size: 15px;
   }
 }
