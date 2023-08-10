@@ -79,18 +79,8 @@ function Weather() {
 
       <br />
 
-      <form>
-        <label htmlFor="isCelsiusBox"> Celsius</label>
-        <input
-          type="checkbox"
-          name="isCelsius"
-          id="isCelsiusBox"
-          className="checkboxStyle"
-          onChange={() => {
-            setCelsius(!isCelsius);
-          }}
-          checked={isCelsius}
-        />
+     <form>
+      <div className="weather_inputs">
         <input
           type="text"
           name="city"
@@ -105,17 +95,35 @@ function Weather() {
           onChange={handleChange}
           value={form.country}
         />
+        </div>
+
+        <div className="weather_submit">
+          <div className="checkboxStyle_wrap">
+          <label htmlFor="isCelsiusBox"> Celsius</label>
+        <input
+          type="checkbox"
+          name="isCelsius"
+          id="isCelsiusBox"
+          className="checkboxStyle"
+          onChange={() => {
+            setCelsius(!isCelsius);
+          }}
+          checked={isCelsius}
+        />
+          </div>
+        
         <button className="getweather" onClick={(e) => weatherData(e)}>
           Submit
         </button>
+        </div>
       </form>
 
       {weather.data !== undefined ? (
-        <div>
+      <div>
           <DisplayWeather data={weather.data} isCelsius={isCelsius} />
         </div>
       ) : null}
-    </div>
+      </div>
   );
 }
 export default Weather;

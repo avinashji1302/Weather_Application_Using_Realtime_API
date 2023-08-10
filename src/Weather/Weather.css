@@ -1,31 +1,45 @@
 .weather {
-
   background: linear-gradient(120deg, #c2c0c0, #8c8c8c);
 
 
     margin-top: 20px;
     border-radius: 20px;
     padding-bottom: 30px;
-    width: max-content;
-    padding: 0px 20px 20px 20px;
-    margin-left: 25%;
+   max-width: 600px;
+   margin-left: auto;
+   margin-right: auto;
+    padding: 2rem;
   }
   .weather .title {
     font-size: 4rem;
     color: black;
-  
-   
   }
+
   .weather form {
+    display: flex;
+    flex-direction: column;
     margin-top: 30px;
   }
+
+  .weather_inputs{
+    display: flex;
+    gap: 10px;
+  }
+
+  .weather_submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 12px;
+  }
+
   .weather form input {
     border-radius: 20px;
     font-size: 20px;
     padding: 12px;
     border: none;
     border-bottom: 2px none rgb(2, 57, 88);
-    margin-right: 10px;
   }
   
   .weather form input:focus {
@@ -50,12 +64,53 @@
     color: black;
   }
 
+  .checkboxStyle_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .checkboxStyle{
     width: 25px;
     height: 25px;
-    position: relative;
-    top: 9px;
-  
   }
-  
-  
+
+
+  /*Mobile Responsive*/
+  @media(max-width: 721px) {
+    .weather {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+    .weather form input:not(.checkboxStyle) {
+      width: 50%;
+  }
+  .weather .title{
+    font-size: 3rem;
+  }
+}
+
+@media(max-width: 500px){
+  .weather .getweather{
+    font-size: 1rem;
+  }
+  .checkboxStyle{
+    width: 20px;
+  }
+  .weather .title{
+    font-size: 2.5rem;
+  }
+}
+
+@media(max-width: 375px){
+  .weather .getweather{
+    font-size: .8rem;
+  }
+  .checkboxStyle{
+    width: 15px;
+  }
+  .weather form input{
+   
+    font-size: 15px;
+  }
+}
