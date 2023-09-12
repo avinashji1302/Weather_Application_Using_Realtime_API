@@ -1,4 +1,4 @@
-# Weather Application - Using real time Api
+# Weather Applcation - Using real time Api
 
 
 Introduction of project......
@@ -6,9 +6,9 @@ Introduction of project......
 ## About this Project
 Task Manager is one of the early projects I created to practice using React with Firebase. It's a simple responsive ToDo application where you can add and delete tasks. You can also mark tasks as completed.
 
-Kindly note that every task you add is public and can be viewed by other visitors on the site. Please do not add sensitive or confidential information as tasks.
+Kindly note that every task you add is public and can be viewed by other vistors on the site. Please do not add sensitive or confidntial information as tasks.
 
-I hope you find this project useful for learning React and Firebase. Feel free to fork, clone, and modify the code to fit your needs. If you have any feedback or suggestions, please let me know by creating an issue or sending me a message.
+I hope you find this project useful for learning React and Firebase. Feel free to fork, clone, and modify the code to fit your needs. If you have any feedback or suggestions, please let me know by creaing an issue or sending me a message.
 
 
 ## Installation
